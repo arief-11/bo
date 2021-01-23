@@ -7,7 +7,7 @@
 			<?php if ($dosbing) { ?>
 				<div class="col-md-2 text-right">
 					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalTambah">
-						<i class="fas fa-plus-circle"></i> &nbsp;Tambah
+						<i class="fas fa-plus-circle"></i> &nbsp;tambah
 					</button>
 				</div>
 			<?php } ?>
