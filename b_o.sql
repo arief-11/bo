@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2021 at 12:19 PM
+-- Generation Time: Jan 25, 2021 at 06:33 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.2.34
 
@@ -68,23 +68,15 @@ CREATE TABLE `bimbingan` (
 --
 
 INSERT INTO `bimbingan` (`id_bimbingan`, `id_tahun`, `id_mahasiswa`, `id_makul`, `bab`, `file`, `deskripsi`, `status`, `waktu`, `catatan`, `file2`, `tahun`, `waktu2`) VALUES
-(18, 10, 14, 5, 'Bab I', '210116_225240.pdf', 'cek pak', 2, '2021-01-16 15:52:40', 'sip\r\n', NULL, '2020', '2021-01-20 02:20:30'),
-(20, 10, 14, 5, 'Bab I', '210116_230902.pdf', '', 1, '2021-01-16 16:09:02', 'cek lagi yaa', '210116_231739.pdf', '2020', '2021-01-20 02:20:34'),
-(21, 10, 14, 5, 'Bab I', '210116_230918.pdf', '', 2, '2021-01-16 16:09:18', 'lanjutkan bab selanjutnya', NULL, '2020', '2021-01-20 02:20:39'),
-(22, 10, 16, 6, 'Bab I', '210119_060348.pdf', 'cek pak', 1, '2021-01-18 23:03:48', 'aaaa', '210119_085327.pdf', '2020', '2021-01-20 02:20:42'),
-(23, 10, 16, 6, 'Bab I', '210119_095322.pdf', 'sip', NULL, '2021-01-19 02:53:22', NULL, NULL, '2020', '2021-01-20 02:20:46'),
-(24, 10, 14, 6, 'Bab I', '210119_113526.pdf', 'wsww', 1, '2021-01-19 04:35:26', 'rev', '210119_130103.pdf', '2020', '2021-01-20 02:20:49'),
-(25, 10, 14, 6, 'Bab III', '210119_114716.pdf', 'aaaa', 2, '2021-01-19 04:47:16', 'oke\r\n', NULL, '2022/2023', '2021-01-20 02:20:52'),
-(28, 10, 14, 6, 'Bab V', '210119_125839.pdf', 'cekbu', 2, '2021-01-19 05:58:39', 'gg', NULL, '2020', '2021-01-20 02:20:58'),
-(29, 10, 14, 6, 'Bab IV', '210119_125903.pdf', 'ce', 1, '2021-01-19 05:59:03', 'revisi', '210120_094851.pdf', '2020', '2021-01-20 02:48:51'),
-(30, 8, 14, 6, 'Bab II', '210120_092221.pdf', 'coba', 2, '2021-01-20 02:22:21', 'siplah\r\n', NULL, '2020 smester 6', '2021-01-20 02:41:43'),
-(31, 8, 14, 6, 'Bab I', '210120_102544.pdf', 'a', 1, '2021-01-20 03:25:44', 'revisi oke\r\n', '210120_102812.pdf', '2020', '2021-01-20 03:28:12'),
-(32, 5, 14, 6, 'Bab I', '210120_112247.pdf', 'cek bu', 2, '2021-01-20 04:22:47', 'oke\r\n', NULL, '2021', '2021-01-20 04:44:52'),
-(33, 5, 14, 6, 'Bab V', '210120_112506.pdf', 'oke', 2, '2021-01-20 04:25:06', 'cek\r\n', NULL, '2021', '2021-01-20 04:52:55'),
-(34, 5, 14, 6, 'Bab I', '210120_115758.pdf', 'cek lagi', 2, '2021-01-20 04:57:58', 'ok\r\n', NULL, '2021', '2021-01-20 10:33:58'),
-(35, 5, 14, 6, 'Bab II', '210120_165018.pdf', 'a', 2, '2021-01-20 09:50:18', 'oo', NULL, '2020', '2021-01-20 10:33:52'),
-(37, 5, 14, 6, 'Bab III', '210120_173828.pdf', 'cek\r\n', NULL, '2021-01-20 10:38:28', NULL, NULL, '2020', '2021-01-20 10:38:28'),
-(38, 5, 13, 6, 'Bab I', '210120_174118.pdf', 'cek', NULL, '2021-01-20 10:41:18', NULL, NULL, '2020 smester 6', '2021-01-20 10:41:18');
+(39, 5, 20, 11, 'Bab I', '210123_101139.pdf', 'cek pak', 1, '2021-01-23 03:11:39', 'revisi', '210123_101712.pdf', '2020/2021 Ganjil', '2021-01-23 03:17:12'),
+(40, 5, 20, 11, 'Bab I', '210123_101141.pdf', 'cek pak', 2, '2021-01-23 03:11:41', 'acc mas', NULL, '2020/2021 Ganjil', '2021-01-23 03:17:21'),
+(41, 5, 20, 12, 'Bab I', '210123_101153.pdf', 'cek pak', 2, '2021-01-23 03:11:53', 'acc mas', NULL, '2020/2021 Ganjil', '2021-01-23 03:14:33'),
+(42, 5, 21, 11, 'Bab II', '210123_101223.pdf', 'ok', 2, '2021-01-23 03:12:23', 'lgsung bab selnjutnya \r\n', NULL, '2020/2021 Ganjil', '2021-01-23 03:16:00'),
+(43, 5, 21, 12, 'Bab II', '210123_101239.pdf', 'ok', 2, '2021-01-23 03:12:39', 'lanjut bab selanjutnta', NULL, '2020/2021 Ganjil', '2021-01-23 03:14:44'),
+(44, 5, 22, 12, 'Bab I', '210123_101311.pdf', 'mohon koreksi pak', 2, '2021-01-23 03:13:11', 'ok', NULL, '2020/2021 Ganjil', '2021-01-23 03:14:51'),
+(45, 5, 22, 11, 'Bab III', '210123_101325.pdf', 'mohon koreksi', 2, '2021-01-23 03:13:25', 'acc mas', NULL, '2020/2021 Ganjil', '2021-01-23 03:16:06'),
+(46, 5, 23, 12, 'Bab IV', '210123_101351.pdf', 'koreksi pak', 2, '2021-01-23 03:13:51', 'lanjutkan', NULL, '2020/2021 Ganjil', '2021-01-23 03:15:02'),
+(47, 5, 23, 11, 'Bab II', '210123_101404.pdf', 'koreksi pak', 2, '2021-01-23 03:14:04', 'lanjutkan', NULL, '2020/2021 Ganjil', '2021-01-23 03:16:21');
 
 -- --------------------------------------------------------
 
@@ -106,14 +98,12 @@ CREATE TABLE `dosen` (
 --
 
 INSERT INTO `dosen` (`id_dosen`, `nama`, `alamat`, `no_hp`, `username`, `password`) VALUES
-(13, 'anas', 'pekalongan', '08587888999', 'anas', '81dc9bdb52d04dc20036dbd8313ed055'),
-(14, 'prastuti', 'kajen', '08587888988', 'prastuti', '81dc9bdb52d04dc20036dbd8313ed055'),
-(15, 'victor', 'pekalongan', '0833666666', 'victor', '81dc9bdb52d04dc20036dbd8313ed055'),
-(16, 'hari', 'pekalongan', '09888888777', 'hari', '81dc9bdb52d04dc20036dbd8313ed055'),
-(17, 'faizal', 'pekalongan', '09888888777', 'faizal', '81dc9bdb52d04dc20036dbd8313ed055'),
-(18, 'rizal', 'pekalongan', '09888888777', 'rizal', '81dc9bdb52d04dc20036dbd8313ed055'),
-(20, 'adib', 'pemalang', '08232388888', 'adib', '81dc9bdb52d04dc20036dbd8313ed055'),
-(21, 'rohman', 'pekalongan', '00888', 'rohman', '81dc9bdb52d04dc20036dbd8313ed055');
+(22, 'Anas Syaifudin, S.Kom ', 'pekalongan', '08587888999', 'anas', '81dc9bdb52d04dc20036dbd8313ed055'),
+(23, 'M. Adib Al-Karomi, M.Kom ', 'pekalongan', '089775555555', 'adib', '81dc9bdb52d04dc20036dbd8313ed055'),
+(24, 'Prastuti Sulistyorini, S.T., M.Kom ', 'pemalang', '08232388888', 'pras', '81dc9bdb52d04dc20036dbd8313ed055'),
+(25, 'Victorianus A.S., S.E., M.Si ', 'pekalongan', '089775555555', 'victor', '81dc9bdb52d04dc20036dbd8313ed055'),
+(26, 'Bambang Ismanto, M.Kom ', 'pemalang', '089775555555', 'bam', '81dc9bdb52d04dc20036dbd8313ed055'),
+(27, 'Much. Rifqi Maulana, M.Kom', 'pekalongan', '089775555555', 'rifqi', '81dc9bdb52d04dc20036dbd8313ed055');
 
 -- --------------------------------------------------------
 
@@ -133,9 +123,7 @@ CREATE TABLE `jurusan` (
 --
 
 INSERT INTO `jurusan` (`id_jurusan`, `id_dosen`, `nama`, `singkatan`) VALUES
-(9, 13, 'Teknik Informatika', 'TI'),
-(12, 17, 'Sistem Informasi', 'SI'),
-(14, 21, 'Komputerisasi Akutansi', 'KA');
+(15, 27, 'Teknik Informatika', 'TI');
 
 -- --------------------------------------------------------
 
@@ -158,14 +146,12 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`id_mahasiswa`, `id_jurusan`, `nama`, `nim`, `alamat`, `no_hp`, `password`) VALUES
-(12, 9, 'agni', '17.240.0021', 'pemalang', '08232388888', 'd41d8cd98f00b204e9800998ecf8427e'),
-(13, 9, 'andri', '17.240.0005', 'pekalongan', '08587888988', '81dc9bdb52d04dc20036dbd8313ed055'),
-(14, 9, 'edo', '17.240.0003', 'kajen', '08587888999', '81dc9bdb52d04dc20036dbd8313ed055'),
-(15, 9, 'anung', '17.240.0008', 'kajen', '08322388833', '81dc9bdb52d04dc20036dbd8313ed055'),
-(16, 12, 'maya', '17.230.0001', 'pekalongan', '08587888999', '81dc9bdb52d04dc20036dbd8313ed055'),
-(17, 12, 'indah', '17.230.0002', 'pemalang', '089775555555', '81dc9bdb52d04dc20036dbd8313ed055'),
-(18, 12, 'anin', '17.230.0003', 'pekalongan', '08232388888', '81dc9bdb52d04dc20036dbd8313ed055'),
-(19, 14, 'rizal', '17.240.0009', 'pekalongan', '00888', '81dc9bdb52d04dc20036dbd8313ed055');
+(20, 15, 'AJI PRASETIYO ', '17.240.0001', 'pekalongan', '08322388833', '81dc9bdb52d04dc20036dbd8313ed055'),
+(21, 15, 'FAIZIN ', '17.240.0002', 'pekalongan', '08322388833', '81dc9bdb52d04dc20036dbd8313ed055'),
+(22, 15, 'M. SYAHRUL FAWAZA ', '17.240.0003', 'pekalongan', '08322388833', '81dc9bdb52d04dc20036dbd8313ed055'),
+(23, 15, 'YAFI ATHA SALSABILA ', '17.240.0004', 'pekalongan', '08587888999', '81dc9bdb52d04dc20036dbd8313ed055'),
+(24, 15, 'DITA ANGGUNIA', '17.240.0005', 'pemalang', '08587888999', '81dc9bdb52d04dc20036dbd8313ed055'),
+(25, 15, 'ANI SURYANINGRUM ', '17.240.0006', 'pemalang', '08322388833', '81dc9bdb52d04dc20036dbd8313ed055');
 
 -- --------------------------------------------------------
 
@@ -184,10 +170,10 @@ CREATE TABLE `makul` (
 --
 
 INSERT INTO `makul` (`id_makul`, `nama`, `bab_maks`) VALUES
-(5, 'Laporan Magang', 5),
-(6, 'Analisa sistem', 3),
-(7, 'desain sistem', 3),
-(9, 'Komunikasi Bisnis', 3);
+(11, 'Laporan Magang', 3),
+(12, 'Komunikasi Bisnis', 4),
+(13, 'Analisa sistem', 4),
+(14, 'Desain Sistem', 4);
 
 -- --------------------------------------------------------
 
@@ -207,19 +193,9 @@ CREATE TABLE `pembimbing` (
 --
 
 INSERT INTO `pembimbing` (`id_pembimbing`, `id_jurusan`, `id_makul`, `id_dosen`) VALUES
-(21, 9, 5, 13),
-(22, 9, 6, 14),
-(23, 9, 7, 14),
-(24, 9, 8, 15),
-(27, 9, 9, 20),
-(28, 12, 6, 16),
-(29, 12, 7, 16),
-(30, 12, 9, 20),
-(31, 12, 5, 20),
-(32, 14, 6, 21),
-(33, 14, 6, 16),
-(34, 9, 9, 14),
-(35, 12, 9, 15);
+(36, 15, 11, 22),
+(37, 15, 11, 26),
+(38, 15, 12, 25);
 
 -- --------------------------------------------------------
 
@@ -238,26 +214,18 @@ CREATE TABLE `ploting` (
 --
 
 INSERT INTO `ploting` (`id_ploting`, `id_pembimbing`, `id_mahasiswa`) VALUES
-(19, 21, 13),
-(20, 22, 12),
-(21, 23, 12),
-(22, 24, 12),
-(23, 26, 13),
-(25, 21, 14),
-(26, 22, 14),
-(27, 23, 14),
-(28, 27, 14),
-(29, 28, 16),
-(30, 30, 18),
-(33, 29, 18),
-(34, 31, 18),
-(36, 32, 19),
-(37, 28, 17),
-(38, 28, 18),
-(39, 35, 16),
-(40, 21, 15),
-(41, 34, 13),
-(42, 22, 13);
+(43, 36, 20),
+(44, 36, 25),
+(45, 36, 24),
+(46, 36, 21),
+(47, 36, 22),
+(48, 36, 23),
+(49, 38, 20),
+(50, 38, 25),
+(51, 38, 24),
+(52, 38, 21),
+(53, 38, 22),
+(54, 38, 23);
 
 -- --------------------------------------------------------
 
@@ -351,43 +319,43 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `bimbingan`
 --
 ALTER TABLE `bimbingan`
-  MODIFY `id_bimbingan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id_bimbingan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `dosen`
 --
 ALTER TABLE `dosen`
-  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `jurusan`
 --
 ALTER TABLE `jurusan`
-  MODIFY `id_jurusan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_jurusan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `makul`
 --
 ALTER TABLE `makul`
-  MODIFY `id_makul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_makul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `pembimbing`
 --
 ALTER TABLE `pembimbing`
-  MODIFY `id_pembimbing` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_pembimbing` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `ploting`
 --
 ALTER TABLE `ploting`
-  MODIFY `id_ploting` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id_ploting` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `tahun`

@@ -10,7 +10,7 @@
                                      LAPORAN</b></i></a> -->
 			</div>
 			<div class="col-md-3">
-				<select class="form-control" id="pilihmakul">
+				<select class="form-control" id="pilihMakul">
 					<option value="0">-- Pilih Makul --</option>
 					<?php 
 						 $query11 = $this->db->query("SELECT * FROM makul")->result();

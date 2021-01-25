@@ -102,9 +102,9 @@ class Bimbingan extends CI_Controller {
 			$no++;
 			$id_mahasiswa = $x->id_mahasiswa;
 
-			if($makul != 0 and $bab != 0){
+			if($makul != 0 || $bab != 0){
 				$query2 = $this->db->query("SELECT *, DATE_FORMAT(waktu, '%d/%m/%Y') tanggal,dosen.nama nama_dosen, makul.nama makul, mahasiswa.nama mahasiswa FROM bimbingan JOIN makul ON bimbingan.id_makul = makul.id_makul JOIN mahasiswa ON bimbingan.id_mahasiswa = mahasiswa.id_mahasiswa JOIN jurusan ON mahasiswa.id_jurusan = jurusan.id_jurusan JOIN pembimbing ON makul.id_makul = pembimbing.id_makul join dosen ON pembimbing.id_dosen = dosen.id_dosen WHERE bimbingan.id_mahasiswa = '$id_mahasiswa' && id_tahun = '$tahun' && bab = '$c' && status = 2 && bimbingan.id_makul = '$makul' ORDER BY id_bimbingan DESC")->row_array();
-			}else if($makul != 0 | $bab = 0){
+			}else if($makul != 0 | $bab = null){
 				$query2 = $this->db->query("SELECT *, DATE_FORMAT(waktu, '%d/%m/%Y') tanggal,dosen.nama nama_dosen, makul.nama makul, mahasiswa.nama mahasiswa FROM bimbingan JOIN makul ON bimbingan.id_makul = makul.id_makul JOIN mahasiswa ON bimbingan.id_mahasiswa = mahasiswa.id_mahasiswa JOIN jurusan ON mahasiswa.id_jurusan = jurusan.id_jurusan JOIN pembimbing ON makul.id_makul = pembimbing.id_makul join dosen ON pembimbing.id_dosen = dosen.id_dosen WHERE bimbingan.id_mahasiswa = '$id_mahasiswa' && id_tahun = '$tahun' && status = 2 && bimbingan.id_makul = '$makul' ORDER BY id_bimbingan DESC")->row_array();
 			}else if($bab != 0 | $makul = 0){
 				$query2 = $this->db->query("SELECT *, DATE_FORMAT(waktu, '%d/%m/%Y') tanggal,dosen.nama nama_dosen, makul.nama makul, mahasiswa.nama mahasiswa FROM bimbingan JOIN makul ON bimbingan.id_makul = makul.id_makul JOIN mahasiswa ON bimbingan.id_mahasiswa = mahasiswa.id_mahasiswa JOIN jurusan ON mahasiswa.id_jurusan = jurusan.id_jurusan JOIN pembimbing ON makul.id_makul = pembimbing.id_makul join dosen ON pembimbing.id_dosen = dosen.id_dosen WHERE bimbingan.id_mahasiswa = '$id_mahasiswa' && id_tahun = '$tahun' && status = 2  ORDER BY id_bimbingan DESC")->row_array();
