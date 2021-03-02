@@ -113,6 +113,13 @@
 							} else if ($status == 'dosen') {
 						?>
 							<li class="nav-item">
+								<a href="<?= base_url('monitoring') ?>" class="nav-link <?= $this->uri->segment(1) == 'monitoring' ? 'active' : '' ?>">
+									<i class="nav-icon fas fa-desktop"></i>
+									<p>Monitoring</p>
+								</a>
+							</li>
+
+							<li class="nav-item">
 								<a href="<?= base_url('bimbingan/menunggu') ?>" class="nav-link <?= $this->uri->segment(2) == 'menunggu' ? 'active' : '' ?>">
 									<i class="nav-icon far fa-circle text-primary"></i>
 									<p>Menunggu</p>

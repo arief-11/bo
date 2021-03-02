@@ -77,22 +77,22 @@
 											</button>
 										<?php } ?>
 										<?php if ($x->status == 1) { ?>
-											<button class="dropdown-item batalrevisi"
+											<!-- <button class="dropdown-item batalrevisi"
 												data-toggle="modal"
 												data-target="#modalBatal"
 												data-id="<?= $x->id_bimbingan ?>"
 											>
 												Batal Revisi
-											</button>
+											</button> -->
 										<?php } ?>
 										<?php if ($x->status == 2) { ?>
-											<button class="dropdown-item batalacc"
+											<!-- <button class="dropdown-item batalacc"
 												data-toggle="modal"
 												data-target="#modalBatal2"
 												data-id="<?= $x->id_bimbingan ?>"
 											>
 												Batal Acc
-											</button>
+											</button> -->
 										<?php } ?>
 										<a class="dropdown-item" href="<?= base_url('riwayat/bimbingan/'.$x->id_bimbingan) ?>">
 											Riwayat Bimbingan

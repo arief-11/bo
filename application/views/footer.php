@@ -39,17 +39,17 @@
 	<script src="<?= base_url('assets/dist/js/adminlte.min.js') ?>"></script>
 	<!-- DataTables -->
 	<script src="<?= base_url('assets/plugins/datatables/jquery.dataTables.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-responsive/js/dataTables.responsive.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-buttons/js/dataTables.buttons.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/jszip/jszip.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/pdfmake/pdfmake.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/pdfmake/vfs_fonts.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.html5.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.print.min.js') ?>"></script>
-<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.colVis.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-responsive/js/dataTables.responsive.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-buttons/js/dataTables.buttons.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/jszip/jszip.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/pdfmake/pdfmake.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/pdfmake/vfs_fonts.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.html5.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.print.min.js') ?>"></script>
+	<script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.colVis.min.js') ?>"></script>
 
 
 
@@ -70,11 +70,11 @@
 			$('#tabel').DataTable()
 			$('#tabel2').DataTable({ 'columnDefs': [{ 'orderable': false, 'targets': [2, 3, 4, 5, 6] }] })
 			 //Initialize Select2 Elements
-		    $('.select2').select2()
+			 $('.select2').select2()
 
 		    //Initialize Select2 Elements
 		    $('.select2bs4').select2({
-		      theme: 'bootstrap4'
+		    	theme: 'bootstrap4'
 		    })
 		})
 
@@ -83,7 +83,7 @@
 		})
 
 		<?php if ($x = $this->session->flashdata('success')) { ?>
-		
+
 			$(function() {
 				const Toast = Swal.mixin({ toast: true, position: 'top-end', showConfirmButton: false, timer: 3000 })
 				Toast.fire({ type: 'success', title: '<?= $x ?>' })
@@ -299,11 +299,11 @@
 					var url = "<?= base_url('bimbingan/hapus2/:id') ?>"
 					url = url.replace(':id', id)
 					$('#hapus').attr('href', url)
-				})
+				}) 
 
 				$(document).on('change', '#pilihbab', function () {
 					var bab = $(this).val()
-				 var makul = $('#pilihMakul').val();
+					var makul = $('#pilihmakul').val();
 
 					if (bab != 0 || makul !=0) {
 						$.ajax({
@@ -328,8 +328,8 @@
 				})
 
 				$(document).on('change', '#pilihmakul', function () {
-				var makul = $(this).val()
-				 var bab = $('#pilihbab').val();
+					var makul = $(this).val()
+					var bab = $('#pilihbab').val();
 
 					if (bab == 0 || makul !=0) {
 						
@@ -420,11 +420,13 @@
 					var id = $(this).data('id')
 					var mahasiswa = $(this).data('mahasiswa')
 					var pembimbing = $(this).data('pembimbing')
+					var status = $(this).data('status')
 					var url = "<?= base_url('ploting/ubah/:id/:pembimbing') ?>"
 					url = url.replace(':id', id)
 					url = url.replace(':pembimbing', pembimbing)
 					$('form').attr('action', url)
 					$('#mahasiswa').val(mahasiswa)
+					$('#status').val(status)
 				})
 
 				$(document).on('click', '.hapus', function () {
@@ -495,22 +497,22 @@
 		<?php } ?>
 	</script>
 	<script>
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-  });
-</script>
+		$(function () {
+			$("#example1").DataTable({
+				"responsive": true, "lengthChange": false, "autoWidth": false,
+				"buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"], "lengthChange": true
+			}).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+			$('#example2').DataTable({
+				"paging": true,
+				"lengthChange": false,
+				"searching": false,
+				"ordering": true,
+				"info": true,
+				"autoWidth": false,
+				"responsive": true,
+			});
+		});
+	</script>
 
 </body>
 </html>

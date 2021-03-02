@@ -31,7 +31,7 @@ class Ploting extends CI_Controller {
 		if ($query2) {
 			$this->session->set_flashdata('error', 'Gagal, mahasiswa sudah di ploting.');
 		} else {
-			$this->db->query("INSERT INTO ploting VALUES (null, '$id', '$mahasiswa')");
+			$this->db->query("INSERT INTO ploting VALUES (null, '$id', '$mahasiswa', 'Baru')");
 			$this->session->set_flashdata('success', 'Mahasiswa berhasil disimpan.');
 		}
 
@@ -41,6 +41,7 @@ class Ploting extends CI_Controller {
 	public function ubah($id, $pembimbing)
 	{
 		$mahasiswa = $this->input->post('mahasiswa');
+		$status = $this->input->post('status');
 
 		$query = $this->db->query("SELECT id_makul FROM pembimbing WHERE id_pembimbing = '$pembimbing'")->row();
 		$id_makul = $query->id_makul;
@@ -50,7 +51,7 @@ class Ploting extends CI_Controller {
 		if ($query2) {
 			$this->session->set_flashdata('error', 'Gagal, mahasiswa sudah di ploting.');
 		} else {
-			$this->db->query("UPDATE ploting SET id_mahasiswa = '$mahasiswa' WHERE id_ploting = '$id'");
+			$this->db->query("UPDATE ploting SET id_mahasiswa = '$mahasiswa', ket = '$status' WHERE id_ploting = '$id'");
 			$this->session->set_flashdata('success', 'Mahasiswa berhasil diubah.');
 		}
 

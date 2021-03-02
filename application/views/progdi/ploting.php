@@ -40,6 +40,7 @@
 									<th>Nama</th>
 									<th>NIM</th>
 									<th>Nomor Hp</th>
+									<th>Status</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -51,6 +52,7 @@
 									<td><?= $x->nama ?></td>
 									<td><?= $x->nim ?></td>
 									<td><?= $x->no_hp ?></td>
+									<td><?= $x->status ?></td>
 									<td class="text-center">
 										<button type="button" class="btn btn-info btn-sm ubah" title="Ubah"
 											data-toggle="modal"
@@ -58,6 +60,7 @@
 											data-id="<?= $x->id_ploting ?>"
 											data-mahasiswa="<?= $x->id_mahasiswa ?>"
 											data-pembimbing="<?= $pembimbing->id_pembimbing ?>"
+											data-status="<?= $x->status ?>"
 										>
 											<i class="fas fa-pencil-alt"></i>
 										</button>
@@ -123,6 +126,9 @@
 						<?php foreach ($mahasiswa as $x) { ?>
 							<option value="<?= $x->id_mahasiswa ?>"><?= $x->nama ?></option>
 						<?php } ?>
+					</select>
+					<select name="status" class="form-control" id="status">
+						<option><?= $x->status ?></option>
 					</select>
 				</div>
 			</div>

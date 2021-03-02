@@ -48,6 +48,11 @@ class Dashboard extends CI_Controller {
 			$acc = $this->db->query("SELECT COUNT(id_bimbingan) jumlah FROM bimbingan JOIN makul ON bimbingan.id_makul = makul.id_makul JOIN pembimbing ON makul.id_makul = pembimbing.id_makul WHERE pembimbing.id_dosen = '$id' && status = 2 && id_tahun = '$tahun'")->row();
 			$semua = $this->db->query("SELECT COUNT(id_bimbingan) jumlah FROM bimbingan JOIN makul ON bimbingan.id_makul = makul.id_makul JOIN pembimbing ON makul.id_makul = pembimbing.id_makul WHERE pembimbing.id_dosen = '$id' && id_tahun = '$tahun'")->row();
 
+			usort($a, function($a, $b)
+			{
+				return strcmp($a->id_bimbingan, $b->id_bimbingan);
+			});
+			
 			$v['data'] = $a;
 			$v['menunggu'] = $menunggu->jumlah;
 			$v['revisi'] = $revisi->jumlah;
@@ -79,6 +84,11 @@ class Dashboard extends CI_Controller {
 			}
 
 			$query2 = $this->db->query("SELECT * FROM jurusan WHERE id_jurusan = '$jurusan'")->row();
+
+			usort($a, function($a, $b)
+			{
+				return strcmp($a->id_bimbingan, $b->id_bimbingan);
+			});
 
 			$v['data'] = $a;
 			$v['progdi'] = $query2->nama;
